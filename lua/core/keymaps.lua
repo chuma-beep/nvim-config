@@ -37,7 +37,7 @@ vim.keymap.set("n", "<localleader>md", ":MoltenDelete<CR>", { silent = true, des
 vim.keymap.set("n", "<localleader>oh", ":MoltenHideOutput<CR>", { silent = true, desc = "hide output" })
 vim.keymap.set(
   "n",
-  "<localleader>os",
+  "<localleader>ms",
   ":noautocmd MoltenEnterOutput<CR>",
   { silent = true, desc = "show/enter output" }
 )

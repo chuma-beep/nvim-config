@@ -6,3 +6,17 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+--
+-- Place this in your init.lua or a dedicated file for autocommands
+-- local autocmd_group = vim.api.nvim_create_augroup("PyworksAutoRun", { clear = true })
+--
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--   group = autocmd_group,
+--   pattern = "*.py",
+--   callback = function()
+--     -- You may need to use a different command depending on your pyworks setup.
+--     -- `:PyworksRun` is a common command.
+--     vim.cmd("PyworksRun")
+--   end,
+--   desc = "Automatically run the Python file after saving.",
+-- })

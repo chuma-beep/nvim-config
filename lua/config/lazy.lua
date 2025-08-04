@@ -178,4 +178,10 @@ require("lazy").setup({
       require("nvim-jupyter-client").setup({})
     end,
   },
+  {
+    "benlubas/molten-nvim",
+    config = function()
+      vim.g.molten_output_border = "single"
+    end,
+  },
 })
